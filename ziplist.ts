@@ -5,3 +5,9 @@ function zipList(list: unknown[], list2: unknown[]): unknown[]{
     }
     return result;
 }
+
+function zipListTheFunctionalWay(list: unknown[], list2: unknown[],): unknown{
+    const result: unknown[] =[];
+    list.forEach((element, index) => {result.push(element, list2[index])});
+    return result;
+}
